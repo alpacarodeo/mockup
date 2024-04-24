@@ -1,0 +1,93 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+}
+.background {
+  content: "";
+  position: center;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: inline-block;
+  background-image: url("https://s2.seedboxws.com/ddl/usr00198/public/bg.jpg");
+  background-repeat: no-repeat;
+
+  width: 1000px;
+  height: 800px;
+  max-width: 1000px;
+
+  filter: hue-rotate(195deg);
+
+  display: inline-block;
+}
+
+body {
+  background-color: black;
+}
+.main {
+  filter: hue-rotate(0deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  color: white;
+  background-color: gray;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+.content {
+  min-width: 450px;
+  color: white;
+  margin-top: -500px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  position: center;
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+  width: 460px;
+}
+
+.tabs {
+  flex-direction: column-reverse;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.tab-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  gap: 10px 20px;
+  column-gap: 20px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5px;
+}
+
+.tab-list-active {
+  font-weight: bold;
+}
+
+.tabs > div {
+  flex-direction: column;
+}
+
+.tab-content {
+  min-height: 420.69px;
+}
+
+#image {
+  width: 120px;
+}
